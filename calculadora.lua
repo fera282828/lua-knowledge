@@ -16,6 +16,6 @@ end
 -- Para que possamos utilizar esse código em outro arquivo
 -- devemos exportá-lo com o return, de forma que o require
 -- retorne a tabela calculadora com suas funções que podem
--- ser utlizadas.
+-- ser utilizadas.
 
 return calculadora
