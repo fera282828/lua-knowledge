@@ -1,0 +1,9 @@
+-- NaN = Not a Number -> valor 
+
+print(1 == 1)
+print("olá" == "olá")
+print(0/0 == 0/0)
+print(math.sqrt(-1) == math.sqrt(-1 ))
+
+local function isNaN(valor) return valor ~= valor end
+print(isNaN(0/0))

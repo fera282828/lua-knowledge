@@ -1,0 +1,22 @@
+
+local jogoRodando = true
+local tempoAnterior = tempoAtual() -- milisegundos
+
+while jogoRodando do
+	local tempoAtual = tempoAtual()
+	local tempoQuePassou = tempoAtual - tempoAnterior
+
+	-- Teclado, mouse, controle
+	processarEventos()
+
+	atualizaJogo()
+	-- Física, sons, inteligência artificial, etc.
+
+	-- Gráficos
+	renderiza
+
+	tempoAnterior = tempoAtual
+	wait(0.001)
+end
+
+print("Jogo acabou")
